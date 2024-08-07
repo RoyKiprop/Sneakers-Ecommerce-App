@@ -9,7 +9,7 @@ function Search() {
       <input
        
         type="text"
-        className="text-veryDarkBlue w-full border-2 p-2 border- grayishBlue focus:outline-none focus:border-orangeCustom"
+        className="text-veryDarkBlue w-full border-2 p-2 border-gray-150 focus:outline-none  focus:text-darkGrayishBlue  hover:text-darkGrayishBlue  focus:border-orangeCustom hover:border-orangeCustom"
         placeholder="What are you looking for?"
       />
       <Button variant='search'>

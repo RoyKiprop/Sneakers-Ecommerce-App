@@ -1,12 +1,13 @@
-import Cart from "./Cart";
+import Cart from "./CartIcon";
 import Logo from "./Logo";
-import Search from "./Search";
+import Search from "./Form";
+
 
 function Header() {
   return (
-    <div className="mx-28 mt-5 flex justify-between items-center">
+    <div className="mx-28 pt-5 flex justify-between items-center">
       <Logo />
-      <Search />
+      <Search/>
       <Cart />
       
     </div>
