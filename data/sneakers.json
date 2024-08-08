@@ -3,6 +3,7 @@
       "name": "Nike Air Max 270",
       "price": "2000 KES",
       "category": "Running",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Nike Air Max 270 features a sleek, modern design with a large Air Max unit in the heel for cushioning and comfort during runs."
     },
@@ -10,6 +11,7 @@
       "name": "Adidas Ultraboost",
       "price": "3000 KES",
       "category": "Running",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/20082767/pexels-photo-20082767/free-photo-of-red-adidas-shoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Adidas Ultraboost offers unmatched comfort with its Boost cushioning and Primeknit upper, making it perfect for long runs."
     },
@@ -17,6 +19,7 @@
       "name": "Puma RS-X",
       "price": "3500 KES",
       "category": "Casual",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/6776614/pexels-photo-6776614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "Puma RS-X combines bold retro style with modern comfort, featuring a chunky sole and vibrant colors."
     },
@@ -24,6 +27,7 @@
       "name": "New Balance 990v5",
       "price": "1800 KES",
       "category": "Lifestyle",
+      "Quantity":1,
       "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fE5ldyUyMEJhbGFuY2UlMjA5OTB2NSUyMHNob2VzfGVufDB8fDB8fHww",
       "description": "The New Balance 990v5 is known for its superior cushioning and durable build, making it a staple in lifestyle and athletic wear."
     },
@@ -31,6 +35,7 @@
       "name": "Converse Chuck Taylor All Star",
       "price": "4000 KES",
       "category": "Casual",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "A classic design that never goes out of style, the Converse Chuck Taylor All Star features a simple canvas upper and rubber sole."
     },
@@ -38,6 +43,7 @@
       "name": "Vans Old Skool",
       "price": "2800 KES",
       "category": "Casual",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Vans Old Skool is a timeless skate shoe known for its signature side stripe and durable construction."
     },
@@ -45,6 +51,7 @@
       "name": "Nike Air Force 1",
       "price": "5500 KES",
       "category": "Lifestyle",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/9645566/pexels-photo-9645566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Nike Air Force 1 is a streetwear staple, featuring a clean design and cushioning that delivers all-day comfort."
     },
@@ -52,6 +59,7 @@
       "name": "Asics Gel-Kayano 27",
       "price": "3000 KES",
       "category": "Running",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "Asics Gel-Kayano 27 is designed for stability and cushioning, making it ideal for long-distance running."
     },
@@ -59,6 +67,7 @@
       "name": "Under Armour HOVR Phantom",
       "price": "2400 KES",
       "category": "Running",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/6050916/pexels-photo-6050916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Under Armour HOVR Phantom features a plush, comfortable feel with its HOVR cushioning and compression mesh energy web."
     },
@@ -66,6 +75,7 @@
       "name": "Reebok Classic Leather",
       "price": "2900 KES",
       "category": "Lifestyle",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/27517037/pexels-photo-27517037/free-photo-of-nike-air-max-1-sneaker-print.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Reebok Classic Leather is a retro sneaker known for its soft leather upper and comfortable fit."
     },
@@ -73,6 +83,7 @@
       "name": "Balenciaga Triple S",
       "price": "4500 KES",
       "category": "Luxury",
+      "Quantity":1,
       "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "The Balenciaga Triple S is a high-fashion sneaker with a bulky silhouette and premium materials."
     },
@@ -80,6 +91,7 @@
       "name": "Air Jordan 1",
       "price": "6000 KES",
       "category": "Lifestyle",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/6050911/pexels-photo-6050911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Air Jordan 1 is an iconic sneaker with a rich history, known for its high-top design and air-cushioned sole."
     },
@@ -87,6 +99,7 @@
       "name": "Gucci Rhyton",
       "price": "5500 KES",
       "category": "Luxury",
+      "Quantity":1,
       "imageUrl": "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "The Gucci Rhyton features a distinctive design with an oversized silhouette and premium leather construction."
     },
@@ -94,8 +107,57 @@
       "price": "1200 KES",
       "name": "Prada Cloudbust",
       "category": "Luxury",
+      "Quantity":1,
       "imageUrl": "https://plus.unsplash.com/premium_photo-1669644856868-6613f6683346?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "The Prada Cloudbust combines avant-garde design with high-quality materials, offering a unique and luxurious sneaker experience."
-    }
-  ]
+    },
+    { "Id": 15,
+    "name": "Nike Air Max 270",
+    "price": "2000 KES",
+    "category": "Casual",
+    "Quantity":1,
+    "imageUrl": "https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "The Nike Air Max 270 features a sleek, modern design with a large Air Max unit in the heel for cushioning and comfort during runs."
+  },
+  { "Id": 16,
+    "name": "Adidas Ultraboost",
+    "price": "3000 KES",
+    "category": "Luxury",
+    "Quantity":1,
+    "imageUrl": "https://images.pexels.com/photos/20082767/pexels-photo-20082767/free-photo-of-red-adidas-shoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "The Adidas Ultraboost offers unmatched comfort with its Boost cushioning and Primeknit upper, making it perfect for long runs."
+  },
+  { "Id": 17,
+    "name": "Puma RS-X",
+    "price": "3500 KES",
+    "category": "Lifestyle",
+    "Quantity":1,
+    "imageUrl": "https://images.pexels.com/photos/6776614/pexels-photo-6776614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "description": "Puma RS-X combines bold retro style with modern comfort, featuring a chunky sole and vibrant colors."
+  },
+  { "Id": 18,
+    "name": "New Balance 990v5",
+    "price": "1800 KES",
+    "category": "Running",
+    "Quantity":1,
+    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fE5ldyUyMEJhbGFuY2UlMjA5OTB2NSUyMHNob2VzfGVufDB8fDB8fHww",
+    "description": "The New Balance 990v5 is known for its superior cushioning and durable build, making it a staple in lifestyle and athletic wear."
+  },
+  { "Id": 19,
+  "name": "Converse Chuck Taylor All Star",
+  "price": "4000 KES",
+  "category": "Casual",
+  "Quantity":1,
+  "imageUrl": "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "description": "A classic design that never goes out of style, the Converse Chuck Taylor All Star features a simple canvas upper and rubber sole."
+},
+{ "Id": 20,
+  "name": "Vans Old Skool",
+  "price": "2800 KES",
+  "category": "Lifestyle",
+  "Quantity":1,
+  "imageUrl": "https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "description": "The Vans Old Skool is a timeless skate shoe known for its signature side stripe and durable construction."
+}
+]
   

@@ -1,4 +1,4 @@
-import Cart from "./CartIcon";
+import Cart from "./Cart";
 import Logo from "./Logo";
 import Search from "./Form";
 
