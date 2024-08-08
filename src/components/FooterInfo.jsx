@@ -2,7 +2,7 @@
 import { FaFacebookF, FaInstagram,  FaPinterest } from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 
-const FooterInfo = () => {
+function FooterInfo () {
   return (
     <div>
       <h2 className="text-xl font-bold text-white mb-4">Sneakers Co </h2>
@@ -24,7 +24,7 @@ const FooterInfo = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default FooterInfo;

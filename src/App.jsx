@@ -1,7 +1,8 @@
+import ContactPage from "./components/ContactPage"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
-import ProductSlides from "./components/ProductSlides"
+// import ProductSlides from "./components/ProductSlides"
 // import Section1 from "./components/Section1"
 import { ContextProvider } from "./context/cartContext"
 
@@ -16,7 +17,8 @@ function App() {
     <ContextProvider>
       <Header/>
       <Navigation/>
-      <ProductSlides/>
+      <ContactPage/>
+      {/* <ProductSlides/> */}
       {/* <Section1/>
       <Footer/> */}
       <Footer/>

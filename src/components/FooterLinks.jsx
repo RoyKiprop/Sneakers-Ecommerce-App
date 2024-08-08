@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const FooterLinks = ({ title, links }) => {
+function FooterLinks  ({ title, links })  {
   return (
     <div>
       <h3 className="text-lg font-bold text-white mb-4">{title}</h3>
@@ -14,7 +14,7 @@ const FooterLinks = ({ title, links }) => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}
 
 export default FooterLinks;

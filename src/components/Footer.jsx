@@ -4,7 +4,7 @@ import FooterLinks from './FooterLinks';
 import FooterContact from './FooterContact';
 import CopyRight from './CopyRight';
 
-const Footer = () => {
+function Footer  () {
   return (
     <footer className="bg-black p-10">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-20">
@@ -16,7 +16,7 @@ const Footer = () => {
       <CopyRight/>
      
     </footer>
-  );
-};
+  )
+}
 
 export default Footer;

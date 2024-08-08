@@ -1,7 +1,7 @@
 
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
-const FooterContact = () => {
+function FooterContact ()  {
   return (
     <div>
       <h3 className="text-lg font-semibold text-white mb-4">Contact Address</h3>
@@ -14,7 +14,7 @@ const FooterContact = () => {
         <p className="text-grayishBlue">example@gmail.com</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default FooterContact;
