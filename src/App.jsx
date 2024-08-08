@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
 import Section1 from "./components/Section1"
@@ -15,6 +16,7 @@ function App() {
       <Header/>
       <Navigation/>
       <Section1/>
+      <Footer/>
      
     </ContextProvider>
      
