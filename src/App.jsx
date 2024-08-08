@@ -1,32 +1,24 @@
-import ContactPage from "./components/ContactPage"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Navigation from "./components/Navigation"
-// import ProductSlides from "./components/ProductSlides"
-// import Section1 from "./components/Section1"
-import { ContextProvider } from "./context/cartContext"
-
-
-
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import { ContextProvider } from "./context/cartContext";
+import AppNav from "./Pages/AppNav";
 
 function App() {
- 
-
   return (
     <body>
-    <ContextProvider>
-      <Header/>
-      <Navigation/>
-      <ContactPage/>
-      {/* <ProductSlides/> */}
-      {/* <Section1/>
-      <Footer/> */}
-      <Footer/>
-     
-    </ContextProvider>
-     
+      <BrowserRouter>
+        <ContextProvider>
+          <Header />
+          <Navigation />
+          <AppNav/>
+          <Footer />
+        </ContextProvider>
+      </BrowserRouter>
+      
     </body>
-  )
+  );
 }
 
-export default App
+export default App;
