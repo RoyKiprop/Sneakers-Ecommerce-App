@@ -1,7 +1,8 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Navigation from "./components/Navigation"
-import Section1 from "./components/Section1"
+import ProductSlides from "./components/ProductSlides"
+// import Section1 from "./components/Section1"
 import { ContextProvider } from "./context/cartContext"
 
 
@@ -15,7 +16,9 @@ function App() {
     <ContextProvider>
       <Header/>
       <Navigation/>
-      <Section1/>
+      <ProductSlides/>
+      {/* <Section1/>
+      <Footer/> */}
       <Footer/>
      
     </ContextProvider>

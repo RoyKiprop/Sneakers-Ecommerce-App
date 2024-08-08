@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 
-function CustomSlide(props) {
-    const { index, ...otherProps } = props;
+function Slide({children}) {
+   
     return (
-      <div {...otherProps}>
-        <h3>{index}</h3>
-      </div>
+      <>
+        {children}
+      </>
     );
   }
+
+  export default Slide
