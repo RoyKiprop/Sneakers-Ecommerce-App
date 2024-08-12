@@ -4,11 +4,14 @@ import Layout from "./Layout";
 import UseProducts from "../customHooks/UseProducts";
 import { UseCategories } from "../context/categoryContext";
 import { UseCart } from "../context/cartContext";
+import { UseSelected } from "../context/selectionContext";
 
 function Products() {
   const [products] = UseProducts();
   const { selectedRange, selectedCategory } = UseCategories();
   const{dispatch} = UseCart()
+  const{handleSelection} = UseSelected()
+ 
 
   const Price = (price) => {
     if (!price) return 0;
@@ -35,15 +38,15 @@ function Products() {
       <Layout />
       <div className="mt-5 grid grid-cols-4 gap-5">
         {filteredByPrice.map((product) => (
-          <Card variant="products" key={product.Id}>
+          <Card variant="products" key={product.Id} onClick={()=>handleSelection(product)}>
             <img
               src={product.imageUrl}
               className="w-full h-48 object-cover rounded-lg"
             />
-            <p className="p-2 text-center text-darkGrayishBlue">
+            <p className="p-2 text-center text-darkGrayishBlue truncate">
               {product.name}
             </p>
-            <p className=" p-2 text-center font-semibold text-darkGrayishBlue">
+            <p className=" p-2 text-center font-semibold text-[#fe735e]">
               {product.price}
             </p>
             <div className="flex mb-4 ">

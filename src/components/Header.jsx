@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
+
 import Cart from "./Cart";
 import Logo from "./Logo";
 import Search from "./Form";
 
 
-function Header() {
+function Header({ toggleCart}) {
   return (
     <div className="mx-28 pt-5 flex justify-between items-center">
       <Logo />
       <Search/>
-      <Cart />
+      <Cart toggleCart={toggleCart} />
       
     </div>
   );

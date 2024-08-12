@@ -1,21 +1,13 @@
-
-import { CategoryProvider } from "../context/categoryContext"
-import Products from "../components/Products"
-import SideBar from "../components/SideBar"
+import Shop from "../components/Shop"
 
 
-function Shop() {
+
+function ShopPage() {
   return (
-    <CategoryProvider>
-        <section className="mx-28 flex gap-6">
-            <SideBar/>
-            <Products/>
-            
-        
-        </section>
-    </CategoryProvider>
+
+    <Shop/>
    
   )
 }
 
-export default Shop
+export default ShopPage

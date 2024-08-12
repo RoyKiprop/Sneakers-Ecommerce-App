@@ -1,16 +1,18 @@
+/* eslint-disable react/prop-types */
+
 import Category from "./CategoryFilter"
 import PriceFilter from "./PriceFilter"
 import SearchInput from "./SearchInput"
 
-// import Cart from "./CartItems"
 
-function SideBar() {
+
+function SideBar({search, setSearchValue}) {
   return (
-    <div className="flex flex-col gap-6 w-[20%] ">
-        <SearchInput/>
-        <Category/>
+    <div className="sticky flex flex-col gap-6 w-[20%] ">
+        <SearchInput search={search} setSearchValue={setSearchValue}/>
+        <Category search={search}/>
         <PriceFilter/>
-        {/* <Cart/> */}
+      
 
 
       

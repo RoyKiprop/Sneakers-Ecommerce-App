@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-function Card ({children, variant}) {
+function Card ({children, variant, onClick}) {
 
     const classVariation = {
         filter: "bg-gray-100 p-5 rounded-lg",
@@ -14,7 +14,7 @@ function Card ({children, variant}) {
  
 
     return (
-      <div className={classes}>
+      <div className={classes} onClick={onClick}>
         {children}
       </div>
     )

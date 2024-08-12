@@ -1,13 +1,17 @@
 
 /* eslint-disable react/prop-types */
-import { createContext, useReducer, useContext } from "react";
+import { createContext, useReducer, useContext, useEffect } from "react";
 
 const CartContext = createContext();
 
 function CartReducer(state, action) {
   switch (action.type) {
     case "Add":
-      return [...state, action.data];
+      {
+        const ItemAdded = state.some(item => item.Id === action.data.Id)
+        return ItemAdded ? state : [...state, action.data]
+      }
+    
     case "Increase": {
       return state.map(item =>
         item.Id === action.data && item.Quantity < 10
@@ -32,7 +36,16 @@ function CartReducer(state, action) {
 }
 
 function ContextProvider({ children }) {
-  const [cart, dispatch] = useReducer(CartReducer, []);
+  const [cart, dispatch] = useReducer(CartReducer, [], () => {
+    const initialState = localStorage.getItem('cart')
+    return initialState? JSON.parse(initialState): []
+  }
+  );
+
+  useEffect(() =>{
+    localStorage.setItem("cart", JSON.stringify(cart))
+
+  },[cart])
 
   return (
     <CartContext.Provider value={{ cart, dispatch }}>

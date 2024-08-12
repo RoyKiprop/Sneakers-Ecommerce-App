@@ -8,7 +8,7 @@ function PriceFilter() {
   const {selectedRange, setSelectedRange} = UseCategories()
 
   const priceRanges = useMemo(() => {
-    const prices = products.map(product => parseInt(product.price.split(' ')[0]))
+    const prices = products.map(product => Number(product.price.split(' ')[0]))
     const minPrice = Math.min(...prices)
     const maxPrice = Math.max(...prices)
     const rangeSize = 1000 

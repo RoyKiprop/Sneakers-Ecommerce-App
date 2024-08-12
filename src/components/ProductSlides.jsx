@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import UseTrending from "../customHooks/UseTrending";
 import Slide from "./Slide";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function ProductSlides() {
     const [trending] = UseTrending();
@@ -25,7 +26,7 @@ function ProductSlides() {
                             <div className="flex flex-col justify-center md:w-1/2">
                                 <p className="text-7xl text-customWhite font-semibold">{product.name}</p>
                                 <p className="text-5xl my-8 text-black font-medium">{product.price}</p>
-                                <div><Button variant="buy">Buy Now</Button></div>
+                                <Link to='/shop'><Button variant="buy">Buy Now</Button></Link>
                             </div>
                             <div className="flex">
                                 <img 

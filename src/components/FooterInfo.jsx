@@ -1,5 +1,5 @@
 
-import { FaFacebookF, FaInstagram,  FaPinterest } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram} from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
 
 function FooterInfo () {
@@ -18,9 +18,6 @@ function FooterInfo () {
         </a>
         <a href="#" className="text-lightGrayishBlue hover:text-orangeCustom">
           <BsTwitterX size={24} />
-        </a>
-        <a href="#" className="text-lightGrayishBlue hover:text-orangeCustom">
-          <FaPinterest size={24} />
         </a>
       </div>
     </div>

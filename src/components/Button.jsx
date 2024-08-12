@@ -8,7 +8,7 @@ function Button({ children, variant, onClick }) {
     CheckOut: "py-3 px-6 rounded-lg bg-orangeCustom text-customWhite font-semibold w-full",
     quantity: "p-0.5 bg-gray-200 rounded",
     remove: "py-2 px-3 rounded-md border border-customBlack focus:bg-orangeCustom hover:bg-orangeCustom focus:border-orangeCustom hover:border-orangeCustom focus:text-white hover:text-white",
-    buy: "py-3 px-8 bg-black text-white font-semibold"
+    buy: "py-3 px-8 bg-black text-white font-semibold focus:bg-white hover:bg-white focus:text-black hover:text-black "
     
   };
 

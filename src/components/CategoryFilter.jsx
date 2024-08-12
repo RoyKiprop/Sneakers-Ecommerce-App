@@ -1,13 +1,19 @@
+/* eslint-disable react/prop-types */
+
 import Card from "./card"
 import UseProducts from "../customHooks/UseProducts"
 import { UseCategories } from "../context/categoryContext"
 
-function Category() {
+function Category({search}) {
   const [products] = UseProducts()
 
   const {selectedCategory, setSelectedCategory} = UseCategories()
 
   const categories = ["All", ...new Set(products.map(product => product.category))]
+
+  const filteredCategories = search
+  ? categories.filter(category => category.toLowerCase().includes(search.toLowerCase()))
+  : categories
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category)
@@ -17,7 +23,7 @@ function Category() {
     <div>
       <h3 className="mb-3">Filter by Category</h3>
       <Card variant='filter'>
-        {categories.map((category, index) => (
+        {filteredCategories.map((category, index) => (
           <div key={index} className="flex items-center mb-2">
             <label className="flex items-center cursor-pointer">
               <input
