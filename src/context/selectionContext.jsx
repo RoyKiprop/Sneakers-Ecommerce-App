@@ -22,7 +22,7 @@ function SelectedProvider({children}){
        
 
     return (
-        <selectedContext.Provider value={{selectedProduct,openSelected, handleSelection}}>
+        <selectedContext.Provider value={{selectedProduct,openSelected,setSelectedProduct, handleSelection}}>
             {children}
         </selectedContext.Provider>
     )

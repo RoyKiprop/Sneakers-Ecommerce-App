@@ -1,9 +1,9 @@
 import { UseSelected } from "../context/selectionContext";
 import Button from "./Button";
 import { UseCart } from "../context/cartContext";
-import QuantityControl from "./QuantityControl";
 import { FaFacebookF, FaInstagram} from 'react-icons/fa';
 import { BsTwitterX } from "react-icons/bs";
+import { FaCcMastercard, FaCcVisa,FaCcPaypal } from "react-icons/fa";
 
 function ProductDetails() {
   const { selectedProduct } = UseSelected();
@@ -24,8 +24,8 @@ function ProductDetails() {
         <p className="kumbh text-md text-darkGrayishBlue w-[80%]">
           {selectedProduct.description}
         </p>
-        <div className="flex mb-4">
-          <QuantityControl item={selectedProduct} />
+        <div>
+         
           <Button
             onClick={() => dispatch({ type: "Add", data: selectedProduct })}
             variant="AddCart"
@@ -48,7 +48,7 @@ function ProductDetails() {
                 href="#"
                 className="text-darkGrayishBlue hover:text-orangeCustom"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={27} />
               </a>
               <a
                 href="#"
@@ -56,6 +56,14 @@ function ProductDetails() {
               >
                 <BsTwitterX size={24} />
               </a>
+          </div>
+        </div>
+        <div className="flex space-x-4">
+          <p className="kumbh text-xl text-veryDarkBlue font-medium">Payment Method:</p>
+          <div className="flex space-x-3">
+            <FaCcMastercard size={27} className=" text-[#fe735e]"/>
+            <FaCcVisa size={27} className=" text-[#fe735e]"/>
+            <FaCcPaypal size={27} className=" text-[#fe735e]"/>
           </div>
         </div>
       </div>

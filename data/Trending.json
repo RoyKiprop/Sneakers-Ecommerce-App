@@ -1,4 +1,5 @@
-[
+{
+  "Trending":[
   {
     "Id": 1,
     "name": "Puma RS-X",
@@ -26,4 +27,4 @@
     "imageUrl": "../src/assets/images/Image1.png",
     "description": "The Adidas Ultraboost offers unmatched comfort with its Boost cushioning and Primeknit upper, making it perfect for long runs."
   }
-]
+]}

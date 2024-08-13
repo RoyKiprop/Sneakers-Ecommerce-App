@@ -1,4 +1,5 @@
-[
+{
+  "sneakers" : [
     { "Id": 1,
       "name": "Nike Air Max 270",
       "price": "2000 KES",
@@ -160,4 +161,4 @@
   "description": "The Vans Old Skool is a timeless skate shoe known for its signature side stripe and durable construction."
 }
 ]
-  
+  }

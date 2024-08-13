@@ -6,7 +6,7 @@ function UseTrending() {
 
  useEffect( function (){
     async function fetchTrending(){
-       const response = await fetch("../data/Trending.json")
+       const response = await fetch("http://localhost:4000/Trending")
        const data = await response.json()
        setTrending(data)
     }

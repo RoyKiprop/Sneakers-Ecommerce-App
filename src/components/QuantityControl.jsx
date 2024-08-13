@@ -1,18 +1,18 @@
 /* eslint-disable react/prop-types */
 
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
-import Button from './Button';
+import Button from "./Button";
 import { UseCart } from "../context/cartContext";
 
 function QuantityControl({ item }) {
   const { dispatch } = UseCart();
 
   function Increase(id) {
-    dispatch({ type: 'Increase', data: id });
+    dispatch({ type: "Increase", data: id });
   }
 
   function Decrease(id) {
-    dispatch({ type: 'Decrease', data: id });
+    dispatch({ type: "Decrease", data: id });
   }
 
   return (

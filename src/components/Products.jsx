@@ -5,14 +5,27 @@ import UseProducts from "../customHooks/UseProducts";
 import { UseCategories } from "../context/categoryContext";
 import { UseCart } from "../context/cartContext";
 import { UseSelected } from "../context/selectionContext";
+import { useState } from "react";
 
 function Products() {
   const [products] = UseProducts();
   const { selectedRange, selectedCategory } = UseCategories();
-  const{dispatch} = UseCart()
-  const{handleSelection} = UseSelected()
- 
+  const { dispatch } = UseCart();
+  const { handleSelection } = UseSelected();
 
+  const [oneGridDisplay, setOneGridDisplay] = useState(false);
+  const [fourGridDisplay, setFourGridDisplay] = useState(false);
+   
+  const handleOneGrid = () => {
+    setOneGridDisplay(true);
+    setFourGridDisplay(false);
+  };
+
+  const handleFourGrid = () => {
+    setFourGridDisplay(!fourGridDisplay);
+    setOneGridDisplay(false);
+  };
+  
   const Price = (price) => {
     if (!price) return 0;
     const PriceParts = price.split(' ');
@@ -24,33 +37,39 @@ function Products() {
       ? products
       : products.filter((product) => product.category === selectedCategory);
 
-    const filteredByPrice = selectedRange === "All"
+  const filteredByPrice = selectedRange === "All"
     ? filteredByCategory
     : filteredByCategory.filter((product) => {
         const productPrice = Price(product.price);
         const [minPrice, maxPrice] = selectedRange.split('-').map(Number);
         return productPrice >= minPrice && productPrice <= maxPrice;
       });
-    
+
+  const gridClass = oneGridDisplay ? "grid-cols-1" : "grid-cols-4";
+  const cardClass = oneGridDisplay ? "flex space-x-8" : "flex flex-col";
 
   return (
-    <div>
-      <Layout />
-      <div className="mt-5 grid grid-cols-4 gap-5">
+    <div className="w-full">
+      <Layout handleFourGrid={handleFourGrid} handleOneGrid={handleOneGrid} />
+      <div className={`mt-5 grid ${gridClass} gap-5`}>
         {filteredByPrice.map((product) => (
-          <Card variant="products" key={product.Id} onClick={()=>handleSelection(product)}>
+          <Card variant="products" key={product.Id} onClick={() => handleSelection(product)} className={cardClass}>
             <img
               src={product.imageUrl}
-              className="w-full h-48 object-cover rounded-lg"
+              className={`h-48 object-cover rounded-lg ${oneGridDisplay ? 'w-1/3' : 'w-full'}`}
             />
-            <p className="p-2 text-center text-darkGrayishBlue truncate">
-              {product.name}
-            </p>
-            <p className=" p-2 text-center font-semibold text-[#fe735e]">
-              {product.price}
-            </p>
-            <div className="flex mb-4 ">
-              <Button onClick={() => dispatch({type: 'Add', data:product})} variant="AddCart">Add to Cart</Button>
+            <div className={`p-2 ${oneGridDisplay ? 'flex flex-col space-y-8 w-2/3' : 'text-center'}`}>
+              <p className={`text-darkGrayishBlue mb-2 truncate ${oneGridDisplay ? 'text-left ml-16' : ''}`}>
+                {product.name}
+              </p>
+              <p className={`font-semibold text-[#fe735e] mb-2 ${oneGridDisplay ? 'text-left ml-16' : ''}`}>
+                {product.price}
+              </p>
+              <div className={`mt-2 ${oneGridDisplay ? 'text-left' : 'text-center'}`}>
+                <Button onClick={() => dispatch({ type: 'Add', data: product })} variant="AddCart" oneGridDisplay={oneGridDisplay}>
+                  Add to Cart
+                </Button>
+              </div>
             </div>
           </Card>
         ))}

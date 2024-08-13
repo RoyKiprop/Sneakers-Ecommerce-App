@@ -19,11 +19,11 @@ function App() {
     <body>
       <BrowserRouter>
         <ContextProvider>
-          <Header toggleCart={toggleCart} isCartOpen={isCartOpen} />
-          <Navigation />
-          {isCartOpen && <CartPage toggleCart={toggleCart} />}
-          <AppNav/>
-          <Footer />
+            <Header toggleCart={toggleCart} isCartOpen={isCartOpen} />
+            <Navigation />
+            {isCartOpen && <CartPage toggleCart={toggleCart} />}
+            <AppNav/>
+            <Footer />
         </ContextProvider>
       </BrowserRouter>
       
